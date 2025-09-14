@@ -17,7 +17,7 @@ namespace Coding
             int octalValue = Convert.ToInt32("1234", 8); // 8진수를 십진수로 변환
             Console.WriteLine("{0}", octalValue);
 
-            Console.ReadLine();
+            //Console.ReadLine();
             // 정수 데이터 형식
             // 정수가 가질수 있는 최댓값과 최솟값 출력
             int min = -2147483647; // 정수형이 가질 수 있는 최솟값
