@@ -2,6 +2,8 @@
 {
     internal class Program
     {
+        static CodeBase codeBase = new CodeBase(); // Changed to static
+        static NumberLiteral literal = new NumberLiteral();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
@@ -56,6 +58,27 @@
             Console.WriteLine("{0}, {0}", "Hello, C#");
             Console.WriteLine("{0}, {1}", "Hello", "C#");
             Console.WriteLine("{1}, {0}", "C#", "Hello");
+            /*--------------------------------------------------*/
+            // 변수 만들기
+            // 메모리를 잠시 보과해 두고 사용할 수 있는 임시 저장공간 일반적으로 값을 담아 놓는 박스라고 생각한다.
+            // 데이터 형식을 자료형이라고 하는데 이건 박스에 테그를 부착해서 해당 박스는 테그에 적인 값만 담을 수 있도록 하는 것과 같다.
+            int number;
+            // int형 변수 number 선언
+            // 대표적인 정수형
+            // int, long, float, double, string, char, bool등이 있다.
+            number = 7;
+            // 변수를 선언하고 값을 할당/대입한 겁니다.
+            Console.WriteLine(number);
+            // 출력 : 7
+            /*--------------------------------------------------*/
+            // 리터럴 사용하기
+            Console.WriteLine(1234); // 정수형 리터럴
+            Console.WriteLine(3.14f); // 실수형 리터럴
+            Console.WriteLine('A'); // 문자형 리터럴
+            Console.WriteLine("HELLO"); // 문자열형 리터럴
+            /*--------------------------------------------------*/
+            codeBase.Paramiter();
+            literal.Literal();
         }
     }
 }
