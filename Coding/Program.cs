@@ -4,6 +4,7 @@
     {
         static CodeBase codeBase = new CodeBase(); // Changed to static
         static NumberLiteral literal = new NumberLiteral();
+        static CharacterDemo characterDemo = new CharacterDemo();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
@@ -79,6 +80,7 @@
             /*--------------------------------------------------*/
             codeBase.Paramiter();
             literal.Literal();
+            characterDemo.CharDemo();
         }
     }
 }
