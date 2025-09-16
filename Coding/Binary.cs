@@ -99,7 +99,16 @@ namespace Coding
             string strDefault = default(string);
             Console.WriteLine(strDefault);
             // 출력 : null
-
+            StringBuilder sbDefault = default(StringBuilder);
+            Console.WriteLine(sbDefault);
+            // 출력 : null
+            // 튜플 리터럴
+            var t = (100, 200);
+            Console.WriteLine($"{t.Item1}, {t.Item2}");
+            // 출력 : 100, 200
+            var (x, y) = (300, 400);
+            Console.WriteLine($"{x}{y}");
+            // 출력 : 300400
         }
     }
 }

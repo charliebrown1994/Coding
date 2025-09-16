@@ -7,6 +7,7 @@
         static CharacterDemo characterDemo = new CharacterDemo();
         static ReadLineDemo readLineDemo = new ReadLineDemo();
         static Binary binary = new Binary();
+        static Operator op = new Operator();
 
         static void Main(string[] args)
         {
@@ -86,6 +87,7 @@
             characterDemo.CharDemo();
             readLineDemo.ReadLine();
             binary.BinaryDemo();
+            op.DoOperator();
         }
     }
 }
